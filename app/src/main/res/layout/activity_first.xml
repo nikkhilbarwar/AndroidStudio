@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_background"
+        android:text="@string/create"
+        android:onClick="goToMain"
+        android:id="@+id/create"
+        android:layout_marginTop="64dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_background"
+        android:text="@string/read"
+        android:id="@+id/read"
+        android:layout_below="@+id/create"
+        android:onClick="goToSec"
+        android:layout_marginTop="64dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_background"
+        android:text="@string/update"
+        android:onClick="goToUpdate"
+        android:id="@+id/update"
+        android:layout_below="@id/read"
+        android:layout_marginTop="64dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_background"
+        android:text="@string/delete"
+        android:onClick="goToDelete"
+        android:layout_below="@id/update"
+        android:layout_marginTop="64dp" />
+</RelativeLayout>
